@@ -5,7 +5,6 @@ return {
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -17,10 +16,16 @@ return {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {
   		ensure_installed = {
+        "c", "cpp",
   			"vim", "lua", "vimdoc",
         "html", "css", "python",
         "rust", "javascript", "typescript",
-        "markdown", "latex"
+        "markdown", "latex", "bibtex",
+        "arduino", "bash", "clojure",
+        "cmake", "gitignore", "glsl",
+        "hyprlang", "json", "make",
+        "meson", "regex", "sql",
+        "typst", "wgsl"
   		},
   	},
   },
@@ -43,6 +48,10 @@ return {
       vim.g.vimtex_view_method = "zathura"
       vim.g.vimtex_context_pdf_viewer = "zathura"
     end,
+  },
+  {
+    "OXY2DEV/markview.nvim",
+    lazy = false
   },
   -- {
   --   "jbyuki/nabla.nvim",

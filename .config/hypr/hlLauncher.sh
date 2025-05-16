@@ -16,14 +16,19 @@ wl-clipboard-history -t &|
 # Automount
 udiskie --tray &|
 
-# Waybar
-# waybar &|
+hypridle &|
 
 # Wallpaper
 mode 0 &|
 
-shader.sh &|
+#swww-daemon &|
+#swww img -o eDP-1 Pictures/night_ride_by_kirokaze_djj36ht.gif &|
 
+sleep 5
+hyprshade auto &|
+if ! pidof -qx waybar; then
+  waybar &|
+fi
 # live-server --no-browser /home/hvlife/Documents/Programming/WEB/fluidity 
 
 # Sleep

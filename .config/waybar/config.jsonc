@@ -9,9 +9,7 @@
    "on-click": "activate",
 		"format": "{icon}",
    "persistent_workspaces": {
-      "eDP-1": 1,
-      "DP-1": 2,
-      "DP-4": 3
+      "eDP-1": 1
   },
    "format-icons": {
       "1": "1",
